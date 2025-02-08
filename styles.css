@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+}
+
+header img {
+    width: 200px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+section {
+    padding: 30px;
+}
+
+#planes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.recomendado {
+    border: 3px solid gold;
+    background: #333;
+}
+
+.premium {
+    border: 3px solid red;
+}
+
+.precio {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background: black;
+    padding: 10px;
+    font-size: 14px;
+}
