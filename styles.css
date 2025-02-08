@@ -8,112 +8,52 @@ body {
 }
 
 header {
-    background-color: black;
-    padding: 20px;
-}
-
-header img {
-    width: 200px;
-}
-
-h1 {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-section {
-    padding: 30px;
-}
-
-/* Estilos para la biografía */
-.biografia-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
-}
-
-.foto-andres {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.texto-biografia {
-    max-width: 500px;
-}
-
-/* Estilos de los planes */
-.titulo-centrado {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    padding: 100px 20px;
 }
 
-.planes-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.plan {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-}
-
-.recomendado {
-    border: 3px solid gold;
-    background: #333;
-}
-
-.premium {
-    border: 3px solid white;
-}
-
-.precio {
-    display: block;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-/* Botón general */
-.btn-centrado {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.boton-general {
-    background: white;
-    color: black;
-    padding: 12px 24px;
+.cta-button {
+    background: #0075eb;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    border: 2px solid white;
     border-radius: 5px;
 }
 
-/* Footer */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+#servicios, #testimonios, #contacto {
+    padding: 60px 20px;
+}
+
 footer {
     background: black;
     padding: 10px;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
 }
 
 footer img {
     width: 30px;
 }
+
