@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,11 +8,17 @@ body {
     text-align: center;
 }
 
-header {
+/* Hero Section */
+.hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
 }
 
 .cta-button {
@@ -20,37 +27,107 @@ header {
     padding: 15px 30px;
     text-decoration: none;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: black;
-    padding: 10px 0;
-    z-index: 1000;
+.cta-button:hover {
+    background: #005bb5;
 }
 
-nav ul {
-    list-style: none;
+/* Sección Biografía */
+#biografia {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.biografia-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+.foto-andres {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.texto-biografia {
+    max-width: 600px;
+}
+
+/* Sección de Servicios */
+#servicios {
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.servicios-container {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-nav ul li {
-    margin: 0 15px;
+.servicio {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#servicios, #testimonios, #contacto {
+.recomendado {
+    border: 3px solid gold;
+}
+
+.precio {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #0075eb;
+}
+
+/* Testimonios */
+#testimonios {
+    background-color: #222;
     padding: 60px 20px;
 }
 
+.testimonios-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.testimonio {
+    margin-bottom: 20px;
+}
+
+.testimonio p {
+    font-style: italic;
+}
+
+/* Footer */
 footer {
     background: black;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 footer img {
