@@ -48,7 +48,14 @@ section {
 }
 
 /* Estilos de los planes */
-#planes {
+.titulo-centrado {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.planes-container {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -77,16 +84,6 @@ section {
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0;
-}
-
-button {
-    background: white;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: bold;
 }
 
 /* Botón general */
