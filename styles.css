@@ -1,3 +1,4 @@
+/* --- Estilos Generales --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,38 +8,59 @@ body {
     text-align: center;
 }
 
-header {
-    background-color: black;
-    padding: 20px;
-}
-
-header img {
-    width: 200px;
-}
-
-h1 {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-section {
-    padding: 30px;
-}
-
-/* Estilos para la biografía */
-.biografia-container {
+/* --- HERO Section --- */
+.hero {
+    height: 80vh;
+    background: url('assets/hero-image.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
     max-width: 800px;
+}
+
+.cta-button {
+    background: white;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background: #ddd;
+}
+
+/* --- Sección Biografía --- */
+#biografia {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.biografia-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1000px;
     margin: auto;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 .foto-andres {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -47,12 +69,12 @@ section {
     max-width: 500px;
 }
 
-/* Estilos de los planes */
-.titulo-centrado {
+/* --- Sección Planes --- */
+#planes {
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #000;
     text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
 }
 
 .planes-container {
@@ -63,51 +85,64 @@ section {
 }
 
 .plan {
-    background: #222;
+    background: #f1f1f1;
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
+    width: 280px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .recomendado {
     border: 3px solid gold;
-    background: #333;
 }
 
 .premium {
-    border: 3px solid white;
+    border: 3px solid red;
 }
 
-.precio {
-    display: block;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px 0;
+.plan ul {
+    text-align: left;
+    padding: 0;
+    list-style: none;
 }
 
-/* Botón general */
-.btn-centrado {
-    text-align: center;
-    margin-top: 20px;
+.plan ul li {
+    padding: 5px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 
+.plan ul li::before {
+    content: "✔️";
+    margin-right: 8px;
+    color: green;
+}
+
+/* --- Botón General --- */
 .boton-general {
     background: white;
     color: black;
-    padding: 12px 24px;
+    padding: 15px 30px;
+    text-decoration: none;
     font-size: 18px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
     font-weight: bold;
+    border: none;
     cursor: pointer;
-    border: 2px solid white;
-    border-radius: 5px;
 }
 
-/* Footer */
+.boton-general:hover {
+    background: #ddd;
+}
+
+/* --- Footer --- */
 footer {
     background: black;
     padding: 10px;
-    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,5 +152,4 @@ footer {
 footer img {
     width: 30px;
 }
-
 
